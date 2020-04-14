@@ -13,6 +13,7 @@ RUN apt update -y && apt install -y git \
     apt update -y && \
     apt install -y python3.6 && \
     curl https://bootstrap.pypa.io/get-pip.py | python3.6 - --user && \
+    export PATH=${PATH}:/root/.local/bin && \
     pip install --no-cache --upgrade pip \
             setuptools \
             wheel \
