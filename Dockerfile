@@ -13,7 +13,7 @@ RUN apt update -y && apt install -y git \
     apt update -y && \
     apt install -y python3.6 && \
     curl https://bootstrap.pypa.io/get-pip.py | python3.6 - --user && \
-    pip3 install --no-cache --upgrade pip \
+    pip install --no-cache --upgrade pip \
             setuptools \
             wheel \
             yq \
