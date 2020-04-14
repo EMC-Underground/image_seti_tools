@@ -12,8 +12,7 @@ RUN apt update -y && apt install -y git \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt update -y && \
     apt install -y python3.6 && \
-    python3 -m ensurepip && \
-    rm -r /usr/lib/python*/ensurepip && \
+    curl https://bootstrap.pypa.io/get-pip.py | python3.6 - --user && \
     pip3 install --no-cache --upgrade pip \
             setuptools \
             wheel \
