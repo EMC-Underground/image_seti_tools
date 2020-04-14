@@ -11,7 +11,7 @@ RUN apt update -y && apt install -y git \
             jq && \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt update -y && \
-    apt install python3.6 && \
+    apt install -y python3.6 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --no-cache --upgrade pip \
